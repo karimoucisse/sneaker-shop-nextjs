@@ -1,4 +1,6 @@
 import styles from "../styles/Navbar.module.css"
+import Badge from '@mui/material/Badge';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const Navbar = () => {
   return (
@@ -13,6 +15,13 @@ const Navbar = () => {
       <div className= {styles.right}>
         <p className= {styles.menu_item}>S'inscrire</p>
         <p className= {styles.menu_item}>Se connecter</p>
+        <div className= {styles.badge_container}>
+          <Badge 
+            badgeContent={1} color="primary"
+          >
+            <ShoppingCartIcon color="action" />
+          </Badge>
+        </div>
       </div>
     </div>
   )

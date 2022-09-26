@@ -4,7 +4,7 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px 10px 40px;
+    padding: 10px 40px;
     background-color: #ffff;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     position: sticky;
@@ -60,6 +60,15 @@
     color: black;
 }
 .menu_item:hover {
+    color: rgba(0,0,0,0.8);
+    transform: scale(1.01);
+}
+.badge_container {
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.badge_container:hover {
     color: rgba(0,0,0,0.8);
     transform: scale(1.01);
 }
