@@ -11,7 +11,7 @@
     top: 0;
 }
 
-/* left div */
+/* left div container*/
 .left {
     flex: 1;
     display: flex;
@@ -27,7 +27,7 @@
     text-shadow: 2px 2px 4px #d6d7d7;
 }
 
-/* center div */
+/* center div container */
 .center {
     flex: 1;
     display: flex;
@@ -46,7 +46,7 @@
     color: #444040;
 }
 
-/* rignt div */
+/* rignt div container */
 .right {
     flex: 1;
     display: flex;
@@ -60,7 +60,7 @@
     color: black;
 }
 .menu_item:hover {
-    color: rgba(0,0,0,0.8);
+    color: rgba(0,0,0,0.5);
     transform: scale(1.01);
 }
 .badge_container {

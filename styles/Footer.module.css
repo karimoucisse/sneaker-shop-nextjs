@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    background-color: #212a2f;
+    color: white;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/* Left div container */
+.left {
+    flex: 1;                         
+}
+
+/* center div container */
+.center {
+    flex: 1;
+}
+
+/* right div container */
+.right {
+    flex: 1;
+}
