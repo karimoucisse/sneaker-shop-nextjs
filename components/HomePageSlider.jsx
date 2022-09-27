@@ -2,11 +2,13 @@ import styles from "../styles/Slider.module.css"
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Image from "next/image"
+import sneaker1 from "../public/sneakers1.jpg"
+import sneaker2 from "../public/sneakers2.jpg"
 import { useState } from "react";
 
 const Slider = () => {
     const [index, setIndex] = useState(0)
-    const images = ["/sneakers1.jpg", "/sneakers2.jpg" ]
+    const images = [sneaker1, sneaker2 ]
 
     const handleArrowClick = (direction) => {
       if(direction === "left") {

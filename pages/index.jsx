@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import GenderCategory from '../components/GenderCategorySection'
 import Slider from '../components/HomePageSlider'
 import styles from '../styles/Home.module.css'
 
@@ -11,6 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Slider/>
+      <div className= {styles.body}>
+        <GenderCategory/>
+      </div>
     </div>
   )
 }

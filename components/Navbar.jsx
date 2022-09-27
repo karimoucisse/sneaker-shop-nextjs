@@ -11,6 +11,7 @@ const Navbar = () => {
       <div className= {styles.center}>
         <p className= {styles.category}>Homme</p>
         <p className= {styles.category}>Femme</p>
+        <p className= {styles.category}>Enfant</p>
       </div>
       <div className= {styles.right}>
         <p className= {styles.menu_item}>S'inscrire</p>
