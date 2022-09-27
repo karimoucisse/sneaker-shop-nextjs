@@ -1,22 +1,85 @@
 .container {
     display: flex;
+    justify-content: space-between;
     background-color: #212a2f;
     color: white;
     /* margin-top: 30px; */
-    padding: 20px;
+    padding: 3rem;
+    min-height: 18em;
 }
 
 /* Left div container */
 .left {
-    flex: 1;                         
+    /* flex: 1;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;      
 }
-
+.icon_container {
+    display: flex;
+    gap: 20px;
+}
 /* center div container */
 .center {
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.center .item {
     flex: 1;
 }
-
+.center .item h3 {
+    margin-bottom: 20px;
+}
+.center .item button {
+    margin-top: 20px;
+    padding: 14px 16px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+.center .item button:hover {
+    color: rgb(216, 215, 215);
+    border-color: rgb(216, 215, 215);
+}
+.categoies_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
 /* right div container */
 .right {
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.right .item {
     flex: 1;
+}
+.contact_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.contact_item:hover {
+    color: rgb(216, 215, 215);
+    border-color: rgb(216, 215, 215);
+}
+.right h3 {
+    margin-bottom: 20px;
+}
+.img_container {
+    display: flex;
+    gap: 20px;
+}
+.img_container div{
+    position: relative;
+    width: 37px;
+    height: 25px;
+    cursor: pointer;
 }

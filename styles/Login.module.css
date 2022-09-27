@@ -1,0 +1,69 @@
+.container {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.2));
+    /* no-repeat url("/img_couverture.jpg") center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    background-color: white;
+    padding: 20px;
+}
+.title {
+    font-style: 24px;
+    font-weight: 300;
+}
+.wrapper form {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    padding: 20px 0;
+}
+.wrapper input {
+    flex: 1;
+    width: 100%;
+    margin:15px 0 ;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.Password_container {
+    position: relative;
+}
+.eye_icon {
+    color: grey;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    bottom: 0;
+    margin: auto 0;
+    cursor: pointer;
+}
+.eye_icon:hover {
+    color: #979494;
+}
+.form_btn {
+    margin: 10px 0;
+    padding: 12px 35px;
+    width: 100%;
+    font-weight: 600;
+    border: 0.5 solid transparent;
+    background-color: #212a2f;
+    color:white ;
+    cursor: pointer;
+}
+.form_btn:hover {
+    background-color: #272f33;
+}
+.wrapper p, .wrapper a {
+    color: black;
+    margin: 5px;
+    font-size: 12px;
+}
+.wrapper a {
+    text-decoration: underline;
+    cursor: pointer;
+}
