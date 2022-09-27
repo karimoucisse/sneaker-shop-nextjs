@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import GenderCategory from '../components/GenderCategorySection'
 import Slider from '../components/HomePageSlider'
+import NewProducts from '../components/NewProducts'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Slider/>
       <div className= {styles.body}>
         <GenderCategory/>
+        <NewProducts/>
       </div>
     </div>
   )

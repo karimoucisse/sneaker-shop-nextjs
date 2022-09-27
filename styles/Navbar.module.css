@@ -45,6 +45,7 @@
 }
 .category:hover {
     color: #444040;
+    text-decoration: underline;
 }
 
 /* rignt div container */
