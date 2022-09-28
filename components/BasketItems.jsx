@@ -11,12 +11,12 @@ const BasketItems = () => {
         <div className= {styles.right}>
             <div className= {styles.top}>
                 <div>
-                    <h3>Air max 97</h3>
+                    <h3 className= {styles.title}>Air max 97</h3>
                     <p>Prix: 197€</p>
                     <p>Couleur: bleu</p>
                     <p>Taille: 40</p>
                 </div>
-                <DeleteOutlineOutlinedIcon/>
+                <DeleteOutlineOutlinedIcon style={{ cursor: "pointer" }}/>
             </div>
         </div>
     </div>

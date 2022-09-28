@@ -1,17 +1,18 @@
 import EmptyBasket from "../components/EmptyBasket"
 import styles from "../styles/Basket.module.css"
+import BasketItems from "../components/BasketItems"
+import PaymentContainer from "../components/PaymentContainer"
 
 const Basket = () => {
   return (
     <>
         <h1 className= {styles.title}>Panier</h1>
         <div className= {styles.container}>
-            <div products_container>
-                {products.map((item, index) => 
-                    <BasketItems item = {item} index= {index} key = {index} /> 
-                )}
+            <div className= {styles.products_container}>
+                <BasketItems/> 
+                <BasketItems/> 
             </div>
-            <TotalCard />
+            <PaymentContainer/>
             {/* <EmptyBasket/> */}
         </div>
     </>
