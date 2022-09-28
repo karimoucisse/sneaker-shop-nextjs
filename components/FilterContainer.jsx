@@ -1,4 +1,4 @@
-import styles from "../styles/FilterContainer.module.css"
+import styles from "../styles/components-css/FilterContainer.module.css"
 
 const FilterContainer = () => {
   return (

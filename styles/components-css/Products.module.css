@@ -1,5 +1,5 @@
 .container {
-    padding: 40px;
+    padding: 40px 20vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);

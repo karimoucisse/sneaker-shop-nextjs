@@ -1,4 +1,4 @@
-import styles from "../styles/BasketItems.module.css"
+import styles from "../styles/components-css/BasketItems.module.css"
 import Image from "next/image"
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 

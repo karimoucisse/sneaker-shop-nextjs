@@ -1,4 +1,4 @@
-import styles from "../styles/NewProducts.module.css"
+import styles from "../styles/components-css/NewProducts.module.css"
 import ProductCard from "./ProductCard"
 
 const NewProducts = () => {

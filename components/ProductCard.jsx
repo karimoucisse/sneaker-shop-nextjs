@@ -1,4 +1,4 @@
-import styles from "../styles/ProductCard.module.css"
+import styles from "../styles/components-css/ProductCard.module.css"
 import Image from "next/image"
 const ProductCard = () => {
   return (

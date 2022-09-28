@@ -1,5 +1,5 @@
 import EmptyBasket from "../components/EmptyBasket"
-import styles from "../styles/Basket.module.css"
+import styles from "../styles/pages-css/Basket.module.css"
 import BasketItems from "../components/BasketItems"
 import PaymentContainer from "../components/PaymentContainer"
 

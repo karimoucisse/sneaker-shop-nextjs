@@ -1,4 +1,4 @@
-import styles from "../styles/Signup.module.css"
+import styles from "../styles/pages-css/Signup.module.css"
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import { useState } from "react";

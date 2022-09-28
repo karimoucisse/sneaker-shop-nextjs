@@ -1,9 +1,10 @@
 .container {
     display: flex;
     justify-content: space-between;
+    padding: 0 20vh;
 }
 .filter {
-    margin: 20px;
+    margin: 20px 0;
 }
 .title {
     font-size: 20px;

@@ -1,4 +1,4 @@
-import styles from "../styles/EmptyBasket.module.css"
+import styles from "../styles/components-css/EmptyBasket.module.css"
 
 const EmptyBasket = () => {
   return (

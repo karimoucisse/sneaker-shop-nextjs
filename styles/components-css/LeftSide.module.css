@@ -1,0 +1,12 @@
+.container {
+    flex: 1;
+}
+
+.img_container {
+    position: relative;
+    width: 100%;
+    background-color: rgb(246,246,246);
+    height: 70vh;
+    object-fit: cover ;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}

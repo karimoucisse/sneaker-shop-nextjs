@@ -1,4 +1,4 @@
-import styles from "../styles/GenderCategory.module.css"
+import styles from "../styles/components-css/GenderCategory.module.css"
 import Image from "next/image"
 
 const GenderCategory = () => {

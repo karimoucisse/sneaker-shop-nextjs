@@ -2,6 +2,7 @@
     height: calc(100vh - 60px);
     position: relative;
     overflow: hidden;
+    margin-top: 40px;
 }
 .arrow_container {
     position: absolute;
@@ -25,13 +26,14 @@
     right: 0;
 }
 .wrapper {
-    width: 200vw;
+    width: 100vw;
     height: 100%;
     display: flex;
+    justify-content: center;
     transition: all 1.2s ease-in-out;
 }
 .img_Container {
-    width: 100vw;
+    width: 80vw;
     height: 100%;
     position: relative;
 }

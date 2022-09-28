@@ -1,4 +1,4 @@
-import styles from "../styles/Login.module.css"
+import styles from "../styles/pages-css/Login.module.css"
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import { useState } from "react";

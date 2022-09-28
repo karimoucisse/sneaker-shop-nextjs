@@ -1,12 +1,14 @@
 .container {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 0px);
     /* background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.2)); */
     /* no-repeat url("/img_couverture.jpg") center; */
     display: flex;
     align-items: center;
     justify-content: center;
     /* background-color:rgb(247, 238, 225); */
-    background-color:rgb(250, 246, 240);
+    /* background-color:rgb(250, 246, 240); */
+    background: linear-gradient(rgba(249, 244, 244, 0.1), rgba(250, 242, 242, 0.2)),
+    no-repeat url("/background.jpg") center;
 }
 .wrapper {
     background-color: white;

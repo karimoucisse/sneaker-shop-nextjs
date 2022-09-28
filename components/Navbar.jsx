@@ -1,4 +1,4 @@
-import styles from "../styles/Navbar.module.css" //css page
+import styles from "../styles/components-css/Navbar.module.css" //css page
 import Badge from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Link from "next/Link"

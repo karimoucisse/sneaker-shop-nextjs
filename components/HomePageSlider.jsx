@@ -1,4 +1,4 @@
-import styles from "../styles/Slider.module.css"
+import styles from "../styles/components-css/Slider.module.css"
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Image from "next/image"
@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const Slider = () => {
     const [index, setIndex] = useState(0)
-    const images = [sneaker1, sneaker2 ]
+    const images = [sneaker2]
 
     const handleArrowClick = (direction) => {
       if(direction === "left") {
@@ -19,9 +19,9 @@ const Slider = () => {
     }
   return (
     <div className= {styles.container}>
-        <div className= {styles.arrow_container} onClick= {() => handleArrowClick("left")}>
+        {/* <div className= {styles.arrow_container} onClick= {() => handleArrowClick("left")}>
           <ArrowBackIosIcon/>
-        </div>
+        </div> */}
       <div className= {styles.wrapper} style= {{ transform: `translateX(${-100 * index}vw)` }}>
             {images.map((image, index) => {
                return <div className= {styles.img_Container} key= {index}>
@@ -29,9 +29,9 @@ const Slider = () => {
                 </div>
             })}    
       </div>
-      <div className= {styles.arrow_container} onClick= {() => handleArrowClick("right")}>
+      {/* <div className= {styles.arrow_container} onClick= {() => handleArrowClick("right")}>
         <ArrowForwardIosIcon/>
-      </div>
+      </div> */}
     </div>
   )
 }

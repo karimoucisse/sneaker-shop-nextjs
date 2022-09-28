@@ -1,4 +1,4 @@
-import styles from "../styles/PaymentContainer.module.css"
+import styles from "../styles/components-css/PaymentContainer.module.css"
 
 const PaymentContainer = () => {
   return (
