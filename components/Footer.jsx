@@ -9,10 +9,14 @@ const Footer = () => {
   return (
     <div className= {styles.container}>
       <div className= {styles.left}>
-        <h3>Sneaker Shop</h3>
+        <h1>Sneaker Shop</h1>
         <div className= {styles.icon_container}>
-          <LinkedInIcon style={{cursor: "pointer"}}/>
-          <GitHubIcon style={{cursor: "pointer"}}/>
+          <a href="https://www.linkedin.com/in/karimou-cisse/" target= "_blank">
+            <LinkedInIcon style={{cursor: "pointer"}}/>
+          </a>
+          <a href="https://github.com/karimoucisse" target= "_blank">
+            <GitHubIcon style={{cursor: "pointer"}}/>
+          </a>
         </div>
       </div>
       <div className= {styles.center}>

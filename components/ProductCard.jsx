@@ -1,6 +1,6 @@
-import styles from "../styles/Product.module.css"
+import styles from "../styles/ProductCard.module.css"
 import Image from "next/image"
-const Product = () => {
+const ProductCard = () => {
   return (
     <div className= {styles.container}>
         <div className= {styles.img_container}>
@@ -20,4 +20,4 @@ const Product = () => {
   )
 }
 
-export default Product
+export default ProductCard

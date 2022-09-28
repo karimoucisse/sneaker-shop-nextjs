@@ -1,15 +1,15 @@
 import styles from "../styles/NewProducts.module.css"
-import Product from "./Product"
+import ProductCard from "./ProductCard"
 
 const NewProducts = () => {
   return (
     <div className= {styles.container}>
         <h2>Nouveautés</h2>
         <div className= {styles.box}>
-            <Product/>
-            <Product/>
-            <Product/>
-            <Product/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
         </div>
     </div>
   )
