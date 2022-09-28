@@ -1,26 +1,43 @@
 import styles from "../styles/Navbar.module.css" //css page
 import Badge from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Link from "next/Link"
 
 const Navbar = () => {
+  const navItems = [
+    {
+      path: '/homme',
+      name: 'Homme'
+    },
+    {
+      path: '/femme',
+      name: 'Femme'
+    },
+    {
+      path: '/enfant',
+      name: 'Enfant'
+    }
+  ]
   return (
     <div className= {styles.container}>
       <div className= {styles.left}>
-        <div className= {styles.logo}>Sneaker Shop</div>
+        <div className= {styles.logo}><Link href={"/"}>Sneaker Shop</Link></div>
       </div>
       <div className= {styles.center}>
-        <p className= {styles.category}>Homme</p>
-        <p className= {styles.category}>Femme</p>
-        <p className= {styles.category}>Enfant</p>
+        {navItems.map(navItem => {
+          return <p className= {styles.category}><Link href= "/productsList">{navItem.name}</Link></p>
+        })}
+        
+
       </div>
       <div className= {styles.right}>
-        <p className= {styles.menu_item}>S'inscrire</p>
-        <p className= {styles.menu_item}>Se connecter</p>
+        <p className= {styles.menu_item}><Link href= "/signup">S'inscrire</Link></p>
+        <p className= {styles.menu_item}><Link href= "/login">Se connecter</Link></p>
         <div className= {styles.badge_container}>
           <Badge 
             badgeContent={1} color="primary"
           >
-            <ShoppingCartIcon color="action" />
+            <Link href= "/basket"><ShoppingCartIcon color="action" /></Link>
           </Badge>
         </div>
       </div>

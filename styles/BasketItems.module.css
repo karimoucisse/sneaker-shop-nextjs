@@ -1,6 +1,6 @@
 .container {
-    max-width: 600px;
-    height: 130px;
+    max-width: 500px;
+    height: 110px;
     display: flex;
     background-color: #ffff;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
@@ -15,7 +15,7 @@
 }
 .right {
     flex: 2;
-    padding: 10px 20px;
+    padding: 3px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,9 +28,9 @@
 .top p {
     font-weight: 300;
     font-size: 16px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 .title {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     font-weight: 500;
 }
