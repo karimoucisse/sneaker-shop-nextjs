@@ -3,8 +3,9 @@ import GenderCategory from '../components/GenderCategorySection'
 import Slider from '../components/HomePageSlider'
 import NewProducts from '../components/NewProducts'
 import styles from '../styles/pages-css/Home.module.css'
+import { getProducts } from "./api/apiCalls/getProducts"
 
-export default function Home() {
+export default function Home({products}) {
   return (
     <div className={styles.container}>
       <Head>
@@ -15,8 +16,19 @@ export default function Home() {
       <Slider/>
       <div className= {styles.body}>
         <GenderCategory/>
-        <NewProducts/>
+        <NewProducts products= {products}/>
       </div>
     </div>
   )
+}
+
+export async function getServerSideProps() {
+  const URL = `http://localhost:3000/api/products/new`
+  const products = await getProducts(URL)
+  return {
+    props:{
+      products: products
+    }
+    
+  }
 }
