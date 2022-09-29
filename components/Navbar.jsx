@@ -6,15 +6,15 @@ import Link from "next/Link"
 const Navbar = () => {
   const navItems = [
     {
-      path: '/homme',
+      path: 'man',
       name: 'Homme'
     },
     {
-      path: '/femme',
+      path: 'woman',
       name: 'Femme'
     },
     {
-      path: '/enfant',
+      path: 'man',
       name: 'Enfant'
     }
   ]
@@ -24,11 +24,11 @@ const Navbar = () => {
         <div className= {styles.logo}><Link href={"/"}>Sneaker Shop</Link></div>
       </div>
       <div className= {styles.center}>
-        {navItems.map(navItem => {
-          return <p className= {styles.category}><Link href= "/productsList">{navItem.name}</Link></p>
+        {navItems.map((navItem, index) => {
+          return <p className= {styles.category} key= {index}>
+                  <Link href= {`/productsList/${navItem.path}`}>{navItem.name}</Link>
+                </p>
         })}
-        
-
       </div>
       <div className= {styles.right}>
         <p className= {styles.menu_item}><Link href= "/signup">S'inscrire</Link></p>

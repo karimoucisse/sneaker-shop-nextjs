@@ -7,9 +7,6 @@ const NewProducts = () => {
         <h2>Nouveautés</h2>
         <div className= {styles.box}>
             <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
         </div>
     </div>
   )

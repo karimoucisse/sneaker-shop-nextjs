@@ -1,15 +1,14 @@
 import styles from "../../styles/components-css/RightSide.module.css"
 
-const RightSide = () => {
+const RightSide = ({product}) => {
+    
   return (
     <div className= {styles.container}>
-        <h1 className= {styles.title}>Air max 97</h1>
+        <h1 className= {styles.title}>{product.name}</h1>
         <p className= {styles.description}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, 
-            consequuntur eos omnis nesciunt ipsa ullam nemo illum incidunt consequatur 
-            neque cumque modi laboriosam velit inventore id error, dolorum tenetur. Autem.
+            {product.description}
         </p>
-        <span className= {styles.price}>186€</span>
+        <span className= {styles.price}>{product.price}€</span>
         <div className= {styles.filtre_container}>
             <div className= {styles.filtre}>
                 <h2>Color</h2>
@@ -17,14 +16,9 @@ const RightSide = () => {
             </div>
             <div className= {styles.filtre}>
                 <h2>Size</h2>
-                    <div className={styles.filter_size}>40</div> 
-                    <div className={styles.filter_size}>40</div> 
-                    <div className={styles.filter_size}>40</div> 
-                    <div className={styles.filter_size}>40</div> 
-                    <div className={styles.filter_size}>40</div> 
-                    <div className={styles.filter_size}>40</div> 
-                    <div className={styles.filter_size}>40</div> 
-                    
+                {product.size.map(item => {
+                    return <div className={styles.filter_size}>{item}</div> 
+                })}                    
             </div>
         </div>
         <button>Ajouter au panier</button>
