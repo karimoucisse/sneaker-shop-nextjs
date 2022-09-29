@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
 
-const UserSchema = mongoose.Schema({
+const UserSchema = new mongoose.Schema({
     isAdmin: { type: Boolean, default: false },
     firstName: {type: String, required : true},
     lastName: {type: String, required : true},
