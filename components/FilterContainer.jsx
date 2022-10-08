@@ -1,7 +1,7 @@
 import styles from "../styles/components-css/FilterContainer.module.css"
 import { useDispatch } from "react-redux"
 import { update } from "../redux/filtreSlice"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const FilterContainer = () => {
     const dispatch = useDispatch()
@@ -13,9 +13,15 @@ const FilterContainer = () => {
             ...filters,
             [e.target.name] : value
         })
-        // dispatch(update({filter.filter, }))
     }
-    console.log(filters);
+
+    useEffect( () => {
+        dispatch(update({
+            filter: filters.filter, 
+            sort: filters.sort
+        }))
+    }, [filters])
+    
     return (
         <div className= {styles.container}>
             <div className= {styles.filter}>
