@@ -45,3 +45,11 @@
     background-color: rgb(33,42,47);
     color: #ffff;
 }
+.paragraph {
+    max-width: 310px;
+}
+.paragraph p {
+    flex-wrap: wrap;
+    font-size: 12px;
+    margin-top: 10px;
+}

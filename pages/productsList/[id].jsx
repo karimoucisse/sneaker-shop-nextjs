@@ -11,7 +11,7 @@ const ProductsList = ({products}) => {
     <>
     <h1 className= {styles.title}>{id === "man" ? "Homme" : id === "woman" && "Femme"} </h1>
       <FilterContainer/>
-        <Products products = {products}/>
+      <Products products = {products}/>
     </>
   )
 }

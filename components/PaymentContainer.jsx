@@ -38,6 +38,10 @@ const PaymentContainer = () => {
             <button className= {styles.validation_btn}>
                 Finaliser la commande
             </button>
+            <div className= {styles.paragraph}>
+                <p>Les prix et les frais de livraison ne sont validés que durant la finalisation de la commande.</p>
+                <p>Délai de rétractation de 30 jours. </p>
+            </div>
             {/* </StripeCheckout> */}
         </div>
     </div>
