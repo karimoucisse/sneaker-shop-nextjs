@@ -38,8 +38,8 @@ const FilterContainer = () => {
                 <span className= {styles.title}>Trier les produits: </span>
                 <select name= "sort" onChange={handleFiltersChange}>
                     <option>Les plus récents</option>
-                    <option>Prix: décroissant</option>
                     <option>Prix: croissant</option>
+                    <option>Prix: décroissant</option>
                 </select>
             </div>
         </div>

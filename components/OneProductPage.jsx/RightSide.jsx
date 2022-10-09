@@ -16,7 +16,7 @@ const RightSide = ({product}) => {
             </div>
             <div className= {styles.filtre}>
                 <h2>Size</h2>
-                {product.size.map(item => {
+                {product.size?.map(item => {
                     return <div className={styles.filter_size}>{item}</div> 
                 })}                    
             </div>

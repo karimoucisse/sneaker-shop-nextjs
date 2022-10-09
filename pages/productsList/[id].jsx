@@ -9,7 +9,7 @@ const ProductsList = ({products}) => {
   const {id} = router.query
   return (
     <>
-    <h1 className= {styles.title}>{id === "man" ? "Homme" : id === "woman" && "Femme"} </h1>
+      <h1 className= {styles.title}>{id === "man" ? "Homme" : id === "woman" && "Femme"} </h1>
       <FilterContainer/>
       <Products products = {products}/>
     </>
