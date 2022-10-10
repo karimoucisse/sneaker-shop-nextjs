@@ -44,10 +44,10 @@ const Products = ({products}) => {
 
   return (
     <div className= {styles.container}>
-        {filteredProducts?.map(product => {
-            return <ProductCard key= {product._id} product= {product}/>
-          })
-        }
+      {filteredProducts?.map(product => {
+          return <ProductCard key= {product._id} product= {product}/>
+        })
+      }
     </div>
   )
 }

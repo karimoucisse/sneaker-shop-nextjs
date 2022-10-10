@@ -2,8 +2,11 @@ import styles from "../styles/components-css/Navbar.module.css" //css page
 import Badge from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Link from "next/Link"
+import { useSelector } from "react-redux"
+
 
 const Navbar = () => {
+  const quantity = useSelector(state => state.cart.quantity)
   const navItems = [
     {
       path: 'man',
@@ -35,7 +38,7 @@ const Navbar = () => {
         <p className= {styles.menu_item}><Link href= "/login">Se connecter</Link></p>
         <div className= {styles.badge_container}>
           <Badge 
-            badgeContent={1} color="primary"
+            badgeContent={quantity} color="primary"
           >
             <Link href= "/basket"><ShoppingCartIcon color="action" /></Link>
           </Badge>

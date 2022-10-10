@@ -1,33 +1,40 @@
+import { addProduct } from "../../redux/cartSlice"
+import { useDispatch } from "react-redux"
 import styles from "../../styles/components-css/RightSide.module.css"
 
 const RightSide = ({product}) => {
-    
-  return (
-    <div className= {styles.container}>
-        <h1 className= {styles.title}>{product.name}</h1>
-        <p className= {styles.description}>
-            {product.description}
-        </p>
-        <span className= {styles.price}>{product.price}€</span>
-        <div className= {styles.filtre_container}>
-            <div className= {styles.filtre}>
-                <h2>Color</h2>
-            
+    const dispatch = useDispatch()
+
+    const handleClick = () => {
+        dispatch(addProduct({product, quantity: 1, price: product.price})) 
+    }
+
+    return (
+        <div className= {styles.container}>
+            <h1 className= {styles.title}>{product.name}</h1>
+            <p className= {styles.description}>
+                {product.description}
+            </p>
+            <span className= {styles.price}>{product.price}€</span>
+            <div className= {styles.filtre_container}>
+                <div className= {styles.filtre}>
+                    <h2>Color</h2>
+                
+                </div>
+                <div className= {styles.filtre}>
+                    <h2>Size</h2>
+                    {product.size?.map(item => {
+                        return <div className={styles.filter_size}>{item}</div> 
+                    })}                    
+                </div>
             </div>
-            <div className= {styles.filtre}>
-                <h2>Size</h2>
-                {product.size?.map(item => {
-                    return <div className={styles.filter_size}>{item}</div> 
-                })}                    
-            </div>
+            <button onClick={handleClick}>Ajouter au panier</button>
+            {/* <SuccessContainer success= {success}>
+                <CheckCircleOutlineOutlinedIcon/>
+                <Paragraph>Ajouter au panier</Paragraph>
+            </SuccessContainer> */}
         </div>
-        <button>Ajouter au panier</button>
-        {/* <SuccessContainer success= {success}>
-            <CheckCircleOutlineOutlinedIcon/>
-            <Paragraph>Ajouter au panier</Paragraph>
-        </SuccessContainer> */}
-    </div>
-  )
+    )
 }
 
 export default RightSide
