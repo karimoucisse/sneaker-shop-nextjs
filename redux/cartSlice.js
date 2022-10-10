@@ -4,7 +4,7 @@ const cartSlice = createSlice({
     name: 'cart',
     initialState : {
         products: [],
-        // size,
+        // size: 39,
         // color,
         quantity: 0,
         total: 0,
@@ -14,7 +14,7 @@ const cartSlice = createSlice({
             state.quantity += 1;
             // state.size = action.payload.size;
             // state.color = action.payload.color;
-            state.products.push(action.payload.product);
+            state.products.push(action.payload);
             state.total += action.payload.price;
         }
     }

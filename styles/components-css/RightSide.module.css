@@ -27,6 +27,14 @@
     width: 100%;
     margin-bottom: 10px;
 }
+.filter_color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 0.5px solid;
+    margin: 0 10px 10px ;
+    cursor: pointer;
+}
 .filter_size {
     border: 0.5px solid ;
     flex-wrap: wrap;
@@ -35,6 +43,17 @@
     margin: 0 5px 5px ;
     cursor: pointer;
     transition: all ease-in-out .2s;
+}
+.filter_size_active {
+    border: 0.5px solid ;
+    flex-wrap: wrap;
+    font-weight: 400;
+    padding: 10px 15px;
+    margin: 0 5px 5px ;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+    background-color: #212a2f;
+    color: white;
 }
 .filter_size:hover {
     background-color: #212a2f;

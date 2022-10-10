@@ -1,14 +1,22 @@
 import { addProduct } from "../../redux/cartSlice"
 import { useDispatch } from "react-redux"
 import styles from "../../styles/components-css/RightSide.module.css"
+import { useState } from "react"
 
 const RightSide = ({product}) => {
     const dispatch = useDispatch()
+    const [size, setSize] = useState(39)
+    const [color, setColor] = useState()
 
     const handleClick = () => {
-        dispatch(addProduct({product, quantity: 1, price: product.price})) 
+        dispatch(addProduct({...product, size, color})) 
     }
-
+    const handleSizeChange = (size) => {
+        setSize(size)
+    }
+    const onColorClick = (itemColor) => {
+        setColor(itemColor)
+    }
     return (
         <div className= {styles.container}>
             <h1 className= {styles.title}>{product.name}</h1>
@@ -19,12 +27,23 @@ const RightSide = ({product}) => {
             <div className= {styles.filtre_container}>
                 <div className= {styles.filtre}>
                     <h2>Color</h2>
-                
+                    {product.types.map(type => (
+                        <div className= {styles.filter_color} 
+                            style= {{backgroundColor: type.color}} 
+                            key= {type.color} 
+                            onClick= {() => onColorClick(type.color)}
+                        >
+                        </div>
+                    ))}
+
                 </div>
                 <div className= {styles.filtre}>
                     <h2>Size</h2>
                     {product.size?.map(item => {
-                        return <div className={styles.filter_size}>{item}</div> 
+                        return <div 
+                                    className={size == item ? styles.filter_size_active : styles.filter_size} 
+                                    onClick= {() => handleSizeChange(item)}>{item}
+                                </div> 
                     })}                    
                 </div>
             </div>

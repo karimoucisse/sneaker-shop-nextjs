@@ -14,7 +14,7 @@ const BasketItems = ({product}) => {
                     <h3 className= {styles.title}>{product.name}</h3>
                     <p>Prix: {product.price}€</p>
                     <p>Couleur: bleu</p>
-                    <p>Taille: 40</p>
+                    <p>Taille: {product.size}</p>
                 </div>
                 <DeleteOutlineOutlinedIcon style={{ cursor: "pointer" }}/>
             </div>
