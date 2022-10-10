@@ -1,6 +1,8 @@
+import { useSelector } from "react-redux"
 import styles from "../styles/components-css/PaymentContainer.module.css"
 
 const PaymentContainer = () => {
+    const total = useSelector(state => state.cart.total)
   return (
     <div className= {styles.container}>
         <div className= {styles.card}>
@@ -10,7 +12,7 @@ const PaymentContainer = () => {
 
             <div className= {styles.price_container}>
                 <p>Montant de la commande</p>
-                <p>186€</p>
+                <p>{total}€</p>
             </div>
             <div className= {styles.price_container}>
                 <p>Livraison</p>
@@ -18,7 +20,7 @@ const PaymentContainer = () => {
             </div>
             <div className= {styles.total_container}>
                 <p>Total:</p>
-                <p>190€</p>
+                <p>{total + 4}€</p>
             </div>
             {/* <StripeCheckout
                 // nom de mon entreprise

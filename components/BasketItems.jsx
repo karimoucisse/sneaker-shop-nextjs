@@ -2,7 +2,7 @@ import styles from "../styles/components-css/BasketItems.module.css"
 import Image from "next/image"
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 
-const BasketItems = () => {
+const BasketItems = ({product}) => {
   return (
     <div className= {styles.container}>
         <div className= {styles.left}>
@@ -11,8 +11,8 @@ const BasketItems = () => {
         <div className= {styles.right}>
             <div className= {styles.top}>
                 <div>
-                    <h3 className= {styles.title}>Air max 97</h3>
-                    <p>Prix: 197€</p>
+                    <h3 className= {styles.title}>{product.name}</h3>
+                    <p>Prix: {product.price}€</p>
                     <p>Couleur: bleu</p>
                     <p>Taille: 40</p>
                 </div>
