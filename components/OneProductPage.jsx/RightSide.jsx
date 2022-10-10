@@ -6,10 +6,10 @@ import { useState } from "react"
 const RightSide = ({product}) => {
     const dispatch = useDispatch()
     const [size, setSize] = useState(39)
-    const [color, setColor] = useState()
+    const [color, setColor] = useState(product.types[0].color)
 
     const handleClick = () => {
-        dispatch(addProduct({...product, size, color})) 
+        dispatch(addProduct({...product, size, types: {color}})) 
     }
     const handleSizeChange = (size) => {
         setSize(size)
@@ -17,6 +17,7 @@ const RightSide = ({product}) => {
     const onColorClick = (itemColor) => {
         setColor(itemColor)
     }
+    console.log(product.types[0].color);
     return (
         <div className= {styles.container}>
             <h1 className= {styles.title}>{product.name}</h1>
